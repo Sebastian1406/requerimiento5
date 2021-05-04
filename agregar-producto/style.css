@@ -1,0 +1,31 @@
+main label{
+    display: inline-block;
+    min-width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.formulario-estilos{
+    margin-bottom: 10px;
+}
+.formulario-estado {
+    display: inline-block;
+}
+.formulario-estado label{
+    min-width: 100px;
+}
+
+.contenedor{
+    width: 50%;
+    margin: auto;
+    border: solid 1px black;
+    padding:  20px 50px;
+    margin-bottom: 10px;
+    background-color: lightblue;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.botones button{
+    margin-left: 10px ;
+}

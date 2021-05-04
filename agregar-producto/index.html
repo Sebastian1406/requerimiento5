@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class="contenedor">
+        <form action="">
+            <fieldset>
+                <legend>Agregar Productos</legend>
+                <div class="formulario-estilos">
+                    <label for="codigo">Codigo*</label>
+                    <input name="codigo" type="tel" maxlength="6" id="textoCodigo" title="Solo numeros" placeholder="Solo numeros" pattern="[0-9]{6}" required>
+                    <button disabled>Validar</button>
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="nombre">Nombre*</label>
+                    <input name="nombre" type="text" placeholder="Solo letras y números" maxlength="100" id="textoNombre" required>
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="categoria">Categoria*</label>
+                    <select name="categorias" id="categoria" required>
+                        <option value="" selected disabled>Seleccione una categoria...</option>    
+                        <option value="Condimentos">Condimentos</option>
+                        <option value="Frutas/Verduras">Frutas/Verduras</option>
+                        <option value="Carnes">Carnes</option>
+                        <option value="Lácteos">Lácteos</option>
+                        <option value="Pescado/Marisco">Pescado/Marisco</option>
+                        <option value="Repostería">Repostería</option>
+                        <option value="Granos/Cereales">Granos/Cereales</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="string">string</option>
+                        <option value="Bebidas energéticas">Bebidas energéticas</option>
+                    </select>
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="ruc-proveedor">Ruc Proveedor*</label>
+                    <input name="ruc-proveedor" maxlength="11" type="tel" placeholder="Solo números" id="textoRuc" required>
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="proveedor">Proveedor*</label>
+                    <input name="proveedor"type="text" id="textoProveedor">
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="precio">Precio*</label>
+                    <input type="number" step="0.01" min="0" max="100" id="textoPrecio">                
+                </div>
+
+                <div class="formulario-estilos">
+                    <label for="fecha">Fecha*</label>
+                    <input type="date">
+                </div>
+                <div class="formulario-estilos">
+                    <label for="estado">Estado*</label>
+                    <div class="formulario-estado">
+                        <label><input type="radio" name="estado" value="Activo">Activo</label>
+                        <label><input type="radio" name="estado" value="Suspendido">Suspendido</label>
+                        <label><input type="radio" name="estado" value="De baja">De baja</label>
+                    </div>
+                </div>
+                <div class="formulario-estilos">
+                    <label for="afecta-a-impuesto">Afecta a impuesto</label>
+                    <input type="checkbox" id="afectaDeImpuesto" value="true">
+                </div>
+                <div class="formulario-estilos">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" cols="50" rows="5" id="descripcionProducto" ></textarea>
+                </div>
+                <div class="botones">
+                    <button id="btnAgregar">Grabar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+                
+            </fieldset>
+        </form>
+    </div>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

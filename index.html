@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Window Name</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Sistema integrado de gestión</h1>
+        </div>
+        <div class="usuario">
+            <h1><img src="imagenes/user.png" alt="user/png"></h1>
+            <h4>Usuario 1</h4>
+        </div>
+    </header>
+    <nav>
+        <div class="navegacion-lista">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Proveedores</a></li>
+                <li class="desplegable"><a href="#">Productos</a>
+                  <div class="desplegable-contenido">
+                    <a id="listadoProductos" href="">Listado de productos</a>
+                    <a id="agregarProductos" href="">Agregar producto</a>
+                  </div>
+                </li>
+              </ul>
+            </ul>
+        </div>
+        <div class="navegacion-buscador">
+                <label for="buscar-en-la-web">Buscar en la web</label>
+                <input type="search">
+                <button>
+                    <img src="imagenes/lupa.svg" alt="">
+                </button>
+        </div>
+
+    </nav>
+    <main>
+        <iframe src="" frameborder="0" id="main-iframe"></iframe>
+    </main>
+    <footer>
+        <a href="#" target="_blank">¿Que hacemos?</a>
+        <a href="#" target="_blank">Enlaces principales</a>
+        <a href="#" target="_blank">Contáctanos</a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
